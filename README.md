@@ -156,3 +156,10 @@ http://127.0.0.1:8000/events/ingest
 * Kafka event streaming
 * Real-time web dashboard
 * Advanced forecasting models
+
+## Dataset Notice
+
+The CCTV footage, retail transaction datasets, and challenge-provided raw data have been intentionally excluded from this repository in accordance with the Purplle Tech Challenge 2026 submission guidelines.
+
+Only the source code, architecture documents, configuration files, and implementation artifacts required to reproduce the system are included.
+
