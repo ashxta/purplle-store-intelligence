@@ -1,0 +1,71 @@
+{
+  "store_id": "STORE_BLR_002",
+  "store_name": "Purplle Brigade Road",
+  "city": "Bangalore",
+  "open_hours": {"open": "10:00", "close": "22:00"},
+  "cameras": [
+    {"camera_id": "CAM_ENTRY_01", "type": "entry_exit", "description": "Main entry/exit threshold"},
+    {"camera_id": "CAM_FLOOR_02", "type": "main_floor", "description": "Main floor zone coverage"},
+    {"camera_id": "CAM_BILLING_03", "type": "billing", "description": "Billing counter area"},
+    {"camera_id": "CAM_FLOOR_04", "type": "floor_secondary", "description": "Secondary floor coverage"},
+    {"camera_id": "CAM_FLOOR_05", "type": "floor_tertiary", "description": "Tertiary floor coverage"}
+  ],
+  "zones": [
+    {
+      "zone_id": "ENTRY_EXIT",
+      "zone_name": "Entry/Exit",
+      "sku_zone": "ENTRY",
+      "camera_ids": ["CAM_ENTRY_01"],
+      "polygon": [[0, 380], [1920, 380], [1920, 500], [0, 500]],
+      "entry_line_y": 420
+    },
+    {
+      "zone_id": "SKINCARE",
+      "zone_name": "Skincare",
+      "sku_zone": "SKINCARE",
+      "camera_ids": ["CAM_FLOOR_02"],
+      "polygon": [[0, 0], [640, 0], [640, 540], [0, 540]],
+      "sub_categories": ["Sheet Mask", "Toner", "Face Moisturizer and Day Cream", "Serum & Essence", "Face Wash and Cleanser", "Night Cream", "Under eye serum & eye cream", "Face Sunscreen"]
+    },
+    {
+      "zone_id": "MAKEUP",
+      "zone_name": "Makeup",
+      "sku_zone": "MAKEUP",
+      "camera_ids": ["CAM_FLOOR_02"],
+      "polygon": [[640, 0], [1280, 0], [1280, 540], [640, 540]],
+      "sub_categories": ["Lipstick", "Blush", "Foundation", "Concealer and Colour Corrector", "Kajal", "Eyeliner", "Mascara", "Lip Gloss", "Lip Liner", "Compact", "Highlighter & Illuminator", "Primer", "Loose Powder", "Setting spray  powder & fixer", "Lip Balm", "Lip Scrub", "Beauty Blender and Sponge", "Makeup Bag & Organizer", "Makeup Remover"]
+    },
+    {
+      "zone_id": "HAIRCARE",
+      "zone_name": "Haircare",
+      "sku_zone": "HAIRCARE",
+      "camera_ids": ["CAM_FLOOR_04"],
+      "polygon": [[1280, 0], [1920, 0], [1920, 540], [1280, 540]],
+      "sub_categories": ["Shampoo", "Hair Mask", "Hair Serum", "Hair Spray", "Hair Brush & Comb"]
+    },
+    {
+      "zone_id": "BATH_BODY",
+      "zone_name": "Bath & Body",
+      "sku_zone": "BATH_BODY",
+      "camera_ids": ["CAM_FLOOR_05"],
+      "polygon": [[0, 540], [960, 540], [960, 1080], [0, 1080]],
+      "sub_categories": ["Body Wash & Shower Gel", "Body & Massage Oil", "Body Treatment", "Deodorant & Roll-On for Women", "Foot Care", "Manicure & Pedicure Kit", "Nail Polish", "Nail Polish Remover", "Face & Eyebrow Razor"]
+    },
+    {
+      "zone_id": "FRAGRANCE",
+      "zone_name": "Fragrance",
+      "sku_zone": "FRAGRANCE",
+      "camera_ids": ["CAM_FLOOR_05"],
+      "polygon": [[960, 540], [1920, 540], [1920, 900], [960, 900]],
+      "sub_categories": []
+    },
+    {
+      "zone_id": "BILLING",
+      "zone_name": "Billing Counter",
+      "sku_zone": "BILLING",
+      "camera_ids": ["CAM_BILLING_03"],
+      "polygon": [[0, 900], [1920, 900], [1920, 1080], [0, 1080]],
+      "is_billing": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# .gitignore
+# Dataset
+*.csv
+
+# Videos
+*.mp4
+
+# Generated events
+events/*.jsonl
+
+# Database
+*.db
+
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# Model weights
+*.pt
+
+# Screenshots (optional)
+screenshots/
+
+# Local data
+data/
