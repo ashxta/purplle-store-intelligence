@@ -9,7 +9,7 @@ import sqlite3
 from contextlib import contextmanager
 from typing import Generator
 
-DB_PATH = os.getenv("DB_PATH", "/data/store_intelligence.db")
+DB_PATH = os.getenv("DB_PATH", "store_intelligence.db")
 
 
 def get_connection() -> sqlite3.Connection:
