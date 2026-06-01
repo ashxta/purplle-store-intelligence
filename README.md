@@ -21,6 +21,8 @@ The solution provides:
 ---
 
 ## Architecture
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1461ec20-47db-4de0-a550-ff5c405cc37b" />
+
 
 Raw CCTV Footage
 
